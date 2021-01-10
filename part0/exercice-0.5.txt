@@ -1,0 +1,18 @@
+title single page app
+
+browser->server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note right of server:
+ensure that the
+request is a post
+and verify the type of
+content
+end note
+
+server->server:apply the spa.js code already on the server to process the new data arriving
+server-->browser: HTTP CODE 201 and [{ content: ....}]
+
+note left of browser:
+browser recieve a 
+new value and display
+end note
